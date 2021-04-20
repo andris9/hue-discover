@@ -22,7 +22,6 @@ const discover = async () => {
 
     const response = [];
     for (let device of devices) {
-        console.log(`http://${device.internalipaddress}/description.xml`);
         let r = await axios.get(`http://${device.internalipaddress}/description.xml`);
         if (r.status === 200 && r.data) {
             try {
@@ -30,7 +29,6 @@ const discover = async () => {
 
                 if (parsed && parsed.root && parsed.root.device && parsed.root.device[0]) {
                     Object.keys(parsed.root.device[0]).forEach(key => {
-                        console.log(key, parsed.root.device[0][key]);
                         if (
                             Array.isArray(parsed.root.device[0][key]) &&
                             parsed.root.device[0][key].length === 1 &&

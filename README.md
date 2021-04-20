@@ -12,7 +12,7 @@ npm install hue-discover
 const discover = require('hue-discover');
 discover().then(bridges => {
     for (let bridge of bridges) {
-        console.log(birdge);
+        console.log(bridge);
     }
 });
 ```
