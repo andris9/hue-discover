@@ -1,0 +1,18 @@
+{
+    "name": "hue-discover",
+    "version": "1.0.0",
+    "description": "Discover HUE bridge",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Andris Reinman",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "0.21.1",
+        "mdns": "2.7.2",
+        "node-ssdp": "4.0.1",
+        "xml2js": "0.4.23"
+    }
+}
